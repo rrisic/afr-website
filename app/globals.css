@@ -1,26 +1,77 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Header Styles */
+.header {
+  @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300;
+}
+
+.header-sticky {
+  @apply bg-black/80 backdrop-blur-sm;
+}
+
+.header.unpinned {
+  @apply -translate-y-full;
+}
+
+.header-height-fix {
+  @apply h-[80px];
+}
+
+.navbar {
+  @apply flex items-center justify-between h-[80px] px-4;
+}
+
+.navbar-nav {
+  @apply flex items-center space-x-8;
+}
+
+.nav-item {
+  @apply relative;
+}
+
+.nav-link {
+  @apply text-white hover:text-primary transition-colors;
+}
+
+.nav-link.active {
+  @apply text-primary;
+}
+
+/* Primary Color */
+.bg-primary {
+  @apply bg-[#FFB81C];
+}
+
+.text-primary {
+  @apply text-[#FFB81C];
+}
+
+/* Container */
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .navbar-nav {
+    @apply fixed top-[80px] left-0 right-0 bg-black/90 backdrop-blur-sm p-4 flex-col space-y-4;
+  }
 }
