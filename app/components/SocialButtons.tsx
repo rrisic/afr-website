@@ -14,7 +14,7 @@ const SocialButtons = () => {
         <FaInstagram className="w-6 h-6 text-white" />
       </Link>
       <Link
-        href="https://www.linkedin.com/company/anteater-formula-racing/"
+        href="https://www.linkedin.com/company/uciafr/"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-white/10 hover:bg-white/20 transition-colors duration-300 rounded-full p-3"

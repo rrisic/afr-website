@@ -14,20 +14,20 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4">AFR</h3>
-            <p className="text-gray-400">
+            <h3 className="text-2xl font-bold mb-4 tracking-tight">AFR</h3>
+            <p className="text-gray-400 font-medium">
               Anteater Formula Racing - University of California, Irvine
             </p>
           </div>
           
           <div>
-            <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-xl font-semibold mb-4 tracking-tight">Quick Links</h3>
             <ul className="space-y-2">
               {navigation.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-400 hover:text-white transition-colors font-medium"
                   >
                     {item.name}
                   </Link>
@@ -37,29 +37,29 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-4">Contact</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>Email: afr@uci.edu</li>
+            <h3 className="text-xl font-semibold mb-4 tracking-tight">Contact</h3>
+            <ul className="space-y-2 text-gray-400 font-medium">
+              <li>Email: anteaterracing@gmail.com</li>
               <li>Location: University of California, Irvine</li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
+            <h3 className="text-xl font-semibold mb-4 tracking-tight">Follow Us</h3>
             <div className="flex space-x-4">
               <a
                 href="https://www.instagram.com/anteaterformularacing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-white transition-colors font-medium"
               >
                 Instagram
               </a>
               <a
-                href="https://www.linkedin.com/company/anteater-formula-racing"
+                href="https://www.linkedin.com/company/uciafr/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-white transition-colors font-medium"
               >
                 LinkedIn
               </a>
