@@ -190,10 +190,10 @@ export default function TeamPage() {
         </div>
 
         {/* Content Overlay */}
-        <div className="relative z-10 flex h-full h-1/2 items-center justify-center text-center p-4">
+        <div className=" relative z-10 flex h-full items-start justify-center text-center p-4">
         <div className={`text-center ${montserrat.className}`}>
         <div className={`text-center ${montserrat.className}`}>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-white mb-6 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] tracking-tight">
+            <h1 className="m-40 text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-white mb-6 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] tracking-tight">
               Meet the Team
             </h1>
           </div>
