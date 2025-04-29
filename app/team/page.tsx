@@ -180,7 +180,7 @@ export default function TeamPage() {
       <div className="relative h-screen w-full">
         <div className="absolute inset-0 z-0 mx-4 mb-4">
           <Image
-            src="/images/team/full team zot.jpg" // Your full team image
+            src="/images/team/full team zot.JPG" // Your full team image
             alt="Full Anteater Formula Racing Team"
             fill
             className="object-cover rounded-lg"
