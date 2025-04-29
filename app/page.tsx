@@ -25,7 +25,7 @@ export default function Home() {
             className="object-cover rounded-lg"
             priority
           />
-          <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
+          <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
         </div>
         
         {/* Content Overlay */}

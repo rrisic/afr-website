@@ -96,7 +96,7 @@ const Header = () => {
 
           <ul
             id="nav-menu"
-            className={`navbar-nav order-2 w-full justify-center lg:order-1 md:w-auto md:space-x-2 lg:flex ${
+            className={`navbar-nav order-2 w-full justify-center lg:order-1 md:w-auto md:space-x-10 lg:flex ${
               !showMenu ? "hidden" : ""
             }`}
           >
