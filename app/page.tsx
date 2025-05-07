@@ -58,7 +58,7 @@ export default function Home() {
                 <div className="mt-8 flex justify-center">
                   <Link 
                     href="/about" 
-                    className="inline-block bg-racing-gold text-black font-bold py-3 px-8 rounded-lg hover:bg-racing-gold/90 transition-colors"
+                    className="bg-racing-gold text-black font-bold py-3 px-8 rounded-lg hover:bg-racing-gold/90 transition-colors"
                   >
                     Learn More
                   </Link>

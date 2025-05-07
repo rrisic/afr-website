@@ -117,14 +117,15 @@ const BrandsSwiper = () => {
                 className="block h-48 p-6 grayscale hover:grayscale-0 transition-all duration-300"
               >
                 <div className="relative w-full h-full">
-                  <Image
-                    src={brand.image}
-                    alt={brand.name}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    priority
-                  />
+                  <div className="bg-racing-gold/10 p-4 rounded-lg">
+                    <Image
+                      src={brand.image}
+                      alt={brand.name}
+                      width={200}
+                      height={100}
+                      className="object-contain h-16 w-auto mx-auto"
+                    />
+                  </div>
                 </div>
               </Link>
             </SwiperSlide>

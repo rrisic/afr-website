@@ -39,7 +39,7 @@ const SponsorsPage = () => {
   return (
     <main className="min-h-screen bg-black text-white py-16">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center tracking-tight">Our Sponsors</h1>
+        <h2 className="text-3xl font-bold mb-4 text-racing-gold">Our Sponsors</h2>
         
         {/* Sponsor Tiers */}
         {sponsorTiers.map((tier) => (
@@ -124,6 +124,8 @@ const SponsorsPage = () => {
             </div>
           </div>
         )}
+
+        <h2 className="text-3xl font-bold mb-4 text-racing-gold">Become a Sponsor</h2>
       </div>
     </main>
   );

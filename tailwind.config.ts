@@ -9,6 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        'racing-gold': '#FFD700',
+        'racing-navy': '#003264',
+        'racing-blue': '#0066CC',
+        'racing-yellow': '#FFC72C',
+        'racing-black': '#0a0a0a',
+        'racing-dark': '#111111',
+        'racing-gray': '#1a1a1a',
         primary: "#FFD700",
         racing: {
           navy: '#003264',

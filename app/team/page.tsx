@@ -217,27 +217,8 @@ export default function TeamPage() {
                 Meet the Team
               </h1>
             </div>
-            {/* Scroll Buttons */}
-            <div className="text-lg md:text-xl lg:text-2xl xl:text-3xl flex flex-col sm:flex-row justify-center gap-4">
-              <button
-                onClick={() => scrollToSection(managementRef)}
-                className="bg-black/60 hover:bg-black/80 text-white hover:text-racing-gold font-medium py-3 px-6 rounded-lg duration-300 hover:scale-102 transition-all backdrop-blur-sm border border-white/10 hover:border-racing-gold/50"
-              >
-                Management
-              </button>
-              <button
-                onClick={() => scrollToSection(facultyRef)}
-                className="bg-black/60 hover:bg-black/80 text-white hover:text-racing-gold font-medium py-3 px-6 rounded-lg duration-300 hover:scale-102 transition-all backdrop-blur-sm border border-white/10 hover:border-racing-gold/50"
-              >
-                Faculty Sponsor
-              </button>
-              <button
-                onClick={() => scrollToSection(subteamsRef)}
-                className="bg-black/60 hover:bg-black/80 text-white hover:text-racing-gold font-medium py-3 px-6 rounded-lg duration-300 hover:scale-102 transition-all backdrop-blur-sm border border-white/10 hover:border-racing-gold/50"
-              >
-                Subteams
-              </button>
-            </div>
+
+            
 
           </div>
         </div>
