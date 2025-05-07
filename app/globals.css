@@ -20,15 +20,11 @@ body {
 
 /* Header Styles */
 .header {
-  @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300;
+  @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black/80 backdrop-blur-sm;
 }
 
 .header-sticky {
-  @apply bg-black/80 backdrop-blur-sm;
-}
-
-.header.unpinned {
-  @apply -translate-y-full;
+  @apply shadow-lg;
 }
 
 .header-height-fix {
@@ -48,7 +44,7 @@ body {
 }
 
 .nav-link {
-  @apply text-white hover:text-primary transition-colors;
+  @apply text-lg font-medium text-white hover:text-primary transition-colors duration-300;
 }
 
 .nav-link.active {
@@ -73,5 +69,9 @@ body {
 @media (max-width: 1024px) {
   .navbar-nav {
     @apply fixed top-[80px] left-0 right-0 bg-black/90 backdrop-blur-sm p-4 flex-col space-y-4;
+  }
+  
+  .nav-link {
+    @apply text-xl;
   }
 }
