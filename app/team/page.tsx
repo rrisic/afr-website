@@ -156,7 +156,7 @@ const subteams = [
       image: "/images/team/SUS/brandon hs.JPG"
     },
     members: [
-      { name: "Dylan Lynch", role: "Design Engineer", image: "/images/team/SUS/dylan hs.JPG" },
+      { name: "Dylan Lynch", role: "Incoming Lead 25-26", image: "/images/team/SUS/dylan hs.JPG" },
       { name: "Tomas Mejia", role: "Design Engineer", image: "/images/team/SUS/tomas.jpg" },
       { name: "Ashley Kim", role: "Design Engineer", image: "/images/team/SUS/ashley.jpg" },
     ]
