@@ -25,7 +25,7 @@ export default function Home() {
             className="object-cover rounded-lg"
             priority
           />
-          <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
+          <div className="absolute inset-0 bg-black/38 rounded-lg"></div>
         </div>
         
         {/* Content Overlay */}
@@ -58,7 +58,7 @@ export default function Home() {
                 <div className="mt-8 flex justify-center">
                   <Link 
                     href="/about" 
-                    className="bg-racing-gold text-black font-bold py-3 px-8 rounded-lg hover:bg-racing-gold/90 transition-colors"
+                    className="nav-button"
                   >
                     Learn More
                   </Link>

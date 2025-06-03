@@ -2,10 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
+@layer base {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --racing-gold: #FFD700;
+    --racing-navy: #003264;
+    --racing-blue: #0066CC;
+    --racing-yellow: #FFC72C;
+    --racing-black: #0a0a0a;
+    --racing-dark: #111111;
+    --racing-gray: #1a1a1a;
+  }
+}
+
+@layer components {
+  .nav-button {
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding: 0.5rem 1rem;
+    transition: color 300ms ease-in-out;
+    position: relative;
+  }
+
+  .nav-button::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--racing-gold);
+    transition: all 300ms ease-in-out;
+    transform: translateX(-50%);
+  }
+
+  .nav-button:hover {
+    color: var(--racing-gold);
+  }
+
+  .nav-button:hover::after {
+    width: 100%;
+  }
+}
+
+@layer utilities {
+  .text-racing-gold {
+    color: var(--racing-gold);
+  }
+  .text-racing-navy {
+    color: var(--racing-navy);
+  }
+  .text-racing-blue {
+    color: var(--racing-blue);
+  }
+  .text-racing-yellow {
+    color: var(--racing-yellow);
+  }
+  .text-racing-black {
+    color: var(--racing-black);
+  }
+  .text-racing-dark {
+    color: var(--racing-dark);
+  }
+  .text-racing-gray {
+    color: var(--racing-gray);
+  }
+
+  .bg-racing-gold {
+    background-color: var(--racing-gold);
+  }
+  .bg-racing-navy {
+    background-color: var(--racing-navy);
+  }
+  .bg-racing-blue {
+    background-color: var(--racing-blue);
+  }
+  .bg-racing-yellow {
+    background-color: var(--racing-yellow);
+  }
+  .bg-racing-black {
+    background-color: var(--racing-black);
+  }
+  .bg-racing-dark {
+    background-color: var(--racing-dark);
+  }
+  .bg-racing-gray {
+    background-color: var(--racing-gray);
+  }
+
+  .hover\:text-racing-gold:hover {
+    color: var(--racing-gold);
+  }
+  .hover\:bg-racing-gold:hover {
+    background-color: var(--racing-gold);
+  }
+  .hover\:bg-racing-gold\/90:hover {
+    background-color: color-mix(in srgb, var(--racing-gold) 90%, transparent);
+  }
 }
 
 body {
@@ -18,37 +115,48 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-/* Header Styles */
-.header {
-  @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black/80 backdrop-blur-sm;
-}
+@layer components {
+  /* Header Styles */
+  .header {
+    @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black/80 backdrop-blur-sm;
+  }
 
-.header-sticky {
-  @apply shadow-lg;
-}
+  .header-sticky {
+    @apply shadow-lg;
+  }
 
-.header-height-fix {
-  @apply h-[80px];
-}
+  .header-height-fix {
+    @apply h-[80px];
+  }
 
-.navbar {
-  @apply flex items-center justify-between h-[80px] px-4;
-}
+  .navbar {
+    @apply flex items-center justify-between h-[80px] px-4;
+  }
 
-.navbar-nav {
-  @apply flex items-center space-x-8;
-}
+  .navbar-nav {
+    @apply flex items-center space-x-8;
+  }
 
-.nav-item {
-  @apply relative;
-}
+  .nav-item {
+    @apply relative;
+  }
 
-.nav-link {
-  @apply text-lg font-medium text-white hover:text-primary transition-colors duration-300;
-}
+  .nav-link {
+    @apply text-lg font-medium text-white transition-colors duration-300;
+  }
 
-.nav-link.active {
-  @apply text-primary;
+  .nav-link:hover {
+    color: var(--racing-gold);
+  }
+
+  .nav-link.active {
+    color: var(--racing-gold);
+  }
+
+  /* Container */
+  .container {
+    @apply max-w-7xl mx-auto px-4;
+  }
 }
 
 /* Primary Color */
@@ -58,11 +166,6 @@ body {
 
 .text-primary {
   @apply text-[#FFB81C];
-}
-
-/* Container */
-.container {
-  @apply max-w-7xl mx-auto px-4;
 }
 
 /* Responsive */

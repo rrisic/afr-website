@@ -55,11 +55,8 @@ const BrandsSwiper = () => {
             </svg>
           </button>
 
-          <Link href="/sponsors" className="group">
-            <h2 className="text-2xl font-semibold text-white mb-1 transition-colors duration-300 group-hover:text-racing-gold">
-              AFR Sponsors
-            </h2>
-            <div className="w-24 h-1 bg-racing-gold mx-auto rounded-full transition-colors duration-300 group-hover:bg-white"></div>
+          <Link href="/sponsors" className="nav-button">
+            AFR Sponsors
           </Link>
 
           <button
