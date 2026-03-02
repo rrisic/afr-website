@@ -23,15 +23,15 @@ const SponsorsPage = () => {
   // Group sponsors by tier (you can modify this based on your actual sponsor tiers)
   const sponsorTiers: SponsorTier[] = [
     {
-      name: "section 1 example",
+      name: "Gold Tier",
       sponsors: brands.slice(0, 3), // Example: first 3 sponsors as platinum
     },
     {
-      name: "section 2 example",
+      name: "Silver Tier",
       sponsors: brands.slice(3, 8), // Example: next 5 sponsors as gold
     },
     {
-      name: "section 3 example",
+      name: "Bronze Tier",
       sponsors: brands.slice(8), // Example: remaining sponsors as silver
     },
   ];
