@@ -127,7 +127,9 @@ const SponsorsPage = () => {
 
         <h2 className="text-3xl font-bold mb-4 text-racing-gold">Become a Sponsor</h2>
       </div>
+      
     </main>
+    
   );
 };
 

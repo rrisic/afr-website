@@ -40,7 +40,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4 tracking-tight">Contact</h3>
             <ul className="space-y-2 text-gray-400 font-medium">
-              <li>Email: anteaterracing@gmail.com</li>
+              <li>Email: afrmrkt@gmail.com</li>
               <li>Location: University of California, Irvine</li>
             </ul>
           </div>

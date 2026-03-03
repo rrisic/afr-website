@@ -12,7 +12,7 @@ export default function ContactPage() {
             <div className="space-y-4">
               <div>
                 <h3 className="text-xl font-medium mb-2">Email</h3>
-                <p className="text-gray-300">anteaterracing@gmail.com</p>
+                <p className="text-gray-300">afrmrkt@gmail.com</p>
               </div>
               <div>
                 <h3 className="text-xl font-medium mb-2">Location</h3>
@@ -49,7 +49,7 @@ export default function ContactPage() {
               Interested in joining AFR? We're always looking for passionate students to join our team.
             </p>
             <p className="text-gray-300">
-              Contact us at anteaterracing@gmail.com for more information about recruitment and team opportunities.
+              Contact us at afrmrkt@gmail.com for more information about recruitment and team opportunities.
             </p>
           </div>
         </div>
