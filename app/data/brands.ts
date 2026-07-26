@@ -119,6 +119,12 @@ const brands: Brand[] = [
     name: "UROP",
     image: "/images/AFR/UROP_Logo.png",
     url: "https://urop.uci.edu"
+  },
+  {
+    id: 20,
+    name: "VI Grade",
+    image: "/images/AFR/vi_grade_Logo.png",
+    url: "https://www.vi-grade.com/"
   }
 ];
 
